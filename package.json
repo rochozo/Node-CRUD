@@ -1,0 +1,26 @@
+{
+  "name": "api-rest",
+  "version": "1.0.0",
+  "description": "Creation of an API RESTful using Express.js, implementing CRUD operations, and using MongoDB .",
+  "keywords": [
+    "RESTful",
+    "API",
+    "Node.js"
+  ],
+  "license": "ISC",
+  "author": "Gabriel Rocha",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mongodb": "^7.1.0",
+    "mongoose": "^9.2.4",
+    "nodemon": "^3.1.14"
+  },
+  "devDependencies": {}
+}
