@@ -2,10 +2,14 @@ import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import routes from './route/route.js';
+import Model from './model/model.js';
 
+const port = 3000;
 dotenv.config();
 
 const app = express();
+
+
 
 app.use(express.json());
 
@@ -13,7 +17,7 @@ app.use(express.json());
 app.use('/api', routes);
 
 // conexão com banco
-const mongoString = process.env.DATABASE_URL;
+const mongoString = "mongodb://localhost:27017/myDatabase";
 
 mongoose.connect(mongoString);
 
